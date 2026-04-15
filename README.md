@@ -1,4 +1,43 @@
-# RSNA 2024 Lumbar Spine Degenerative Classification
+# Deep Learning in Medical Imaging: Classification of Lumbar Spine Degeneration from MRI Scans
+1. First, multiple classification models are compared on a slice-based stenosis classification task. 
+2. Second, multiple localization models are compared on a vertebral landmark localization task. 
+3. Finally, the best-performing models from both stages are integrated into a complete localization-guided classification pipeline designed for volumetric MRI data. 
+    * This final pipeline reflects a realistic clinical workflow, where anatomical structures are first identified and subsequently analyzed for pathological conditions. 
+    * The proposed modular pipeline is then compared against both a direct classification baseline and a more integrated reference framework to assess its effectiveness and practical relevance.
+
+The benchmark sections address the following questions:
+* Which classification architecture performs best on slice-based lumbar MRI classification?
+* Which localization architecture performs best on vertebral landmark detection?
+
+The final pipeline section addresses the following questions:
+* Does combining the best-performing localization and classification models produce a clinically useful system?
+* How does the modular localization-guided pipeline compare with a stronger integrated reference framework?
+
+### Classification Benchmark
+1. VGG
+2. ResNet
+3. DenseNet
+4. EfficientNet
+5. Vision Transformer (ViT)
+6. Swin Transformer
+
+### Localization Benchmark
+* U-Net
+* Attention U-Net
+* ViT-UNet
+* UNETR
+* Swin-UNet
+
+## Datasets used: 
+* RSNA 2024 Competition
+    * https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification
+* Lumbar MRI Classification Dataset (Mendeley / Kaggle)
+    * https://www.kaggle.com/datasets/abdullahkhan70/lumbar-spinal-mri-dataset
+    * https://data.mendeley.com/datasets/k57fr854j2/2
+* Coordinate Pretraining Dataset
+    * https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification
+
+
 ## Kaggle competition: Classify lumbar spine degenerative conditions
 ### Description 
 * Low back pain is the leading cause of disability worldwide, according to the World Health Organization, affecting 619 million people in 2020. Most people experience low back pain at some point in their lives, with the frequency increasing with age. Pain and restricted mobility are often symptoms of spondylosis, a set of degenerative spine conditions including degeneration of intervertebral discs and subsequent narrowing of the spinal canal (spinal stenosis), subarticular recesses, or neural foramen with associated compression or irritations of the nerves in the low back.
@@ -15,12 +54,6 @@ The goal of this competition is to create models that can be used to aid in the 
 ## Lumbar spine anatomy 
 The lumbar spine consists of five vertebrae (L1 to L5) located between the thoracic spine and the sacrum. 
 These vertebrae are the largest and strongest in the spine, reflecting their role in supporting much of the body's weight and providing stability and flexibility.
-
-<div>
-<img src="attachment:44231df3-da04-45e5-8946-9d722a6d8b90.jpg" width="400"/>
-</div>
-
-
 
 ### Lumbar vertebrae
 

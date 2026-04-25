@@ -9,11 +9,7 @@ The benchmark sections address the following questions:
 * Which classification architecture performs best on slice-based lumbar MRI classification?
 * Which localization architecture performs best on vertebral landmark detection?
 
-The final pipeline section addresses the following questions:
-* Does combining the best-performing localization and classification models produce a clinically useful system?
-* How does the modular localization-guided pipeline compare with a stronger integrated reference framework?
-
-### Classification Benchmark
+### Classification Baseline
 1. VGG
 2. ResNet
 3. DenseNet
@@ -21,19 +17,31 @@ The final pipeline section addresses the following questions:
 5. Vision Transformer (ViT)
 6. Swin Transformer
 
-### Localization Benchmark
+### Localization Baseline
 * U-Net
 * Attention U-Net
 * ViT-UNet
 * UNETR
 * Swin-UNet
 
-## Datasets used: 
-* Spider dataset:
-    * https://spider.grand-challenge.org/data/
+The final pipeline section addresses the following questions:
+* Does combining the best-performing localization and classification models produce a clinically useful system?
+* How does the modular localization-guided pipeline compare with a stronger integrated reference framework?
 
-* Coordinate Pretraining Dataset for Kaggle competition:
-    * https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification
+### Integrated Localization-Aware Pipeline
+* multi-slice classifier
+* 2.5D input around the target slice
+* transformer-based aggregation over slices
+* separate heads per condition and level
+
+## Modular Localization-Guided Pipeline
+* localization model predicts landmarks or heatmaps
+* ROIs are cropped around the predicted anatomical regions
+* classification model predicts pathology from localized regions
+* predictions are aggregated across slices and studies
+
+## Datasets used:
+* https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification
 
 
 ## Kaggle competition: Classify lumbar spine degenerative conditions

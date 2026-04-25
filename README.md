@@ -29,12 +29,10 @@ The final pipeline section addresses the following questions:
 * Swin-UNet
 
 ## Datasets used: 
-* RSNA 2024 Competition
-    * https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification
-* Lumbar MRI Classification Dataset (Mendeley / Kaggle)
-    * https://www.kaggle.com/datasets/abdullahkhan70/lumbar-spinal-mri-dataset
-    * https://data.mendeley.com/datasets/k57fr854j2/2
-* Coordinate Pretraining Dataset
+* Spider dataset:
+    * https://spider.grand-challenge.org/data/
+
+* Coordinate Pretraining Dataset for Kaggle competition:
     * https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification
 
 

@@ -1,0 +1,4 @@
+model,input,pretrained,test_loss,test_log_loss,test_accuracy,test_balanced_accuracy,test_macro_f1,test_stenosis_recall,n_test_rows,n_test_studies
+spinal_canal_stenosis,full_image_grayscale_repeated_3ch_plus_metadata,False,0.4308085839021417,0.2885543919199416,0.8601637107776262,0.781780129856066,0.7190349979198511,0.6809815950920245,1466,297
+neural_foraminal_narrowing,full_image_grayscale_repeated_3ch_plus_metadata,False,0.5242986005574919,0.42591577368125655,0.794585448392555,0.7464786683904331,0.7289649948344712,0.6573529411764706,2955,296
+subarticular_stenosis,full_image_grayscale_repeated_3ch_plus_metadata,False,0.37323551670712984,0.3468986090695472,0.8511371467953136,0.8401713531477597,0.8236334824925495,0.8152709359605911,2902,297

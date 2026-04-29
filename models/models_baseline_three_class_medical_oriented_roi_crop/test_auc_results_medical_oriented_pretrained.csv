@@ -1,0 +1,10 @@
+model,class,auc_ovr,note
+spinal_canal_stenosis,Normal/Mild,0.9509084745443502,
+spinal_canal_stenosis,Moderate,0.8936060639030936,
+spinal_canal_stenosis,Severe,0.9508317250252734,
+neural_foraminal_narrowing,Normal/Mild,0.8851978021978021,
+neural_foraminal_narrowing,Moderate,0.7791138182002801,
+neural_foraminal_narrowing,Severe,0.928961780504733,
+subarticular_stenosis,Normal/Mild,0.9188700591604402,
+subarticular_stenosis,Moderate,0.7773959607363503,
+subarticular_stenosis,Severe,0.9367926638335944,

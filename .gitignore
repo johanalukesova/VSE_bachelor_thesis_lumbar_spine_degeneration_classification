@@ -1,3 +1,11 @@
 .DS_Store
 BC-data/
 .ipynb_checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.zip
+.ipynb_checkpoints/
+__pycache__/
+Classification-baseline/models/
+Localization-baseline/models/

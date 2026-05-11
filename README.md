@@ -34,11 +34,6 @@ The final pipeline section addresses the following questions:
 * transformer-based aggregation over slices
 * separate heads per condition and level
 
-## Modular Localization-Guided Pipeline
-* localization model predicts landmarks or heatmaps
-* ROIs are cropped around the predicted anatomical regions
-* classification model predicts pathology from localized regions
-* predictions are aggregated across slices and studies
 
 ## Datasets used:
 * https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification
